@@ -1,0 +1,140 @@
+body {
+  margin: 0px;
+  height: 100vh;
+
+  background-color: #22212C;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+  br {
+      display: none;
+  }
+}
+
+.background_image {
+  position: fixed;
+  background-image: url("./assets/read_news.jpg"); /* The image used */
+  height: 100vh; /* You must set a specified height */
+  width: 30%;
+  right: 0;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.logo_box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 40px; 
+}
+
+.logo {
+  width: 500px;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 70vw;
+  }
+}
+
+.text_box {
+  padding-inline: 40px;
+  padding-bottom: 40px;
+}
+
+.title_text {
+  color: #04D361;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.subtitle_text {
+  color: #fff;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.normal_text {
+  color: #fff;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form_box {
+  padding-inline: 40px;
+  padding-bottom: 40px;
+}
+
+.form_label_text {
+  color: #A8A8A8;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.input_box {
+  height: 50px;
+  font-size: 16px;
+  width: 90vh;
+  border: 0px;
+  padding-inline: 20px;
+}
+
+.input_box:focus {
+  outline: none;
+}
+
+.webflow-style-input {
+  display: flex;
+}
+
+.green_left_line {
+  height: 52px;
+  min-width: 10px;
+  background-color: #04D361;
+
+}
+
+.send_button {
+  height: 52px;
+  background-color: #8257E5;
+  min-width: 50px;
+  margin-left: 0px;
+  border: 0px;
+}
+
+.send_button:hover {
+  background-color: #9773ec;
+}
+
+.link_box {
+  padding-left: 40px;
+  display: flex;
+  color: #8257E5;
+}
+
+.link_box:hover {
+  padding-left: 40px;
+  display: flex;
+  color: #9773ec;
+}
+
+.link_text {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+
+}
